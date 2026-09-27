@@ -10,7 +10,7 @@ function sessionSignature(payload) {
 }
 
 export function adminPasswordConfigured() {
-	return Boolean(env.ADMIN_PASSWORD && env.ADMIN_PASSWORD.length >= 16);
+	return Boolean(env.ADMIN_PASSWORD && env.ADMIN_PASSWORD.length >= 13);
 }
 
 /** @param {unknown} candidate */

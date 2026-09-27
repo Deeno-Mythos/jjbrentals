@@ -40,7 +40,7 @@ Create a `.env.local` file in the project root. You can copy `.env.example` and 
 CLOUD_NAME=your-cloudinary-cloud-name
 TURSODB_URL=turso://your-database.turso.io
 TURSODB_API_TOKEN=your-database-auth-token
-ADMIN_PASSWORD=use-a-unique-password-at-least-16-characters-long
+ADMIN_PASSWORD=use-a-unique-password-at-least-13-characters-long
 ```
 
 The database client also accepts `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN` instead of `TURSODB_URL` and `TURSODB_API_TOKEN`.
@@ -55,7 +55,7 @@ Then open [http://localhost:5173](http://localhost:5173).
 
 ## Admin console
 
-Open `/admin` on the deployed site or local server and sign in with `ADMIN_PASSWORD`. Choose a unique password of at least 16 characters. The session is stored in a secure, HTTP-only cookie and expires after eight hours.
+Open `/admin` on the deployed site or local server and sign in with `ADMIN_PASSWORD`. Choose a unique password of at least 13 characters. The session is stored in a secure, HTTP-only cookie and expires after eight hours.
 
 New guest requests start as **pending** and do not reserve a room. Confirming a request makes those dates unavailable; if another confirmed stay overlaps, the update is rejected. Cancelled stays no longer block availability.
 
